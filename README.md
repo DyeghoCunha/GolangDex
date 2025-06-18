@@ -1,5 +1,4 @@
-
-# 🔥 Golang Dex Platform
+# 🔥 Universal Dex Platform
 
 Plataforma web de alta performance para criação de enciclopédias temáticas como **Pokédex**, **StarWarsDex** ou qualquer outra baseada em APIs públicas.  
 Desenvolvida 100% em **Go puro (`net/http`)**, com **HTML + CSS sem JavaScript no frontend**.
@@ -23,8 +22,7 @@ Desenvolvida 100% em **Go puro (`net/http`)**, com **HTML + CSS sem JavaScript n
 
 ## 🧱 Estrutura de Microserviços
 
-
-
+```
 root/
 ├── auth-service/        # Autenticação (JWT e OAuth2)
 ├── pokedex-service/     # Consulta de dados da API temática
@@ -33,8 +31,7 @@ root/
 ├── frontend-server/     # Servidor de templates Go com CSS
 ├── shared/              # Pacotes reutilizáveis (JWT, config, etc)
 └── README.md
-
-
+```
 
 Cada serviço é isolado, com deploy próprio e pode ser reutilizado em outras plataformas ou sites.
 
@@ -62,47 +59,41 @@ A estrutura do projeto é pensada para suportar múltiplas temáticas, como:
 
 A troca de tema pode ser feita por variável de ambiente:
 
-env
+```env
 THEME=pokemon
-
+```
 
 ---
 
 ## 🧪 Etapas do Projeto
 
 ### ✅ Etapa 1: Estrutura Inicial
-
-* Separar microserviços em pastas/repos próprios
-* Configurar `.env`, `go.mod`, Dockerfile
+- Separar microserviços em pastas/repos próprios
+- Configurar `.env`, `go.mod`, Dockerfile
 
 ### ✅ Etapa 2: Autenticação
-
-* Email/senha com `bcrypt`
-* OAuth2 com Google, GitHub e Discord
-* JWT para sessão segura
+- Email/senha com `bcrypt`
+- OAuth2 com Google, GitHub e Discord
+- JWT para sessão segura
 
 ### ⏳ Etapa 3: Frontend
-
-* Templates Go + CSS
-* Página inicial, detalhes, filtros
-* Responsividade total
+- Templates Go + CSS
+- Página inicial, detalhes, filtros
+- Responsividade total
 
 ### ⏳ Etapa 4: Integração com APIs
-
-* Conectar com PokeAPI / SWAPI via HTTP
-* Cache opcional com Redis (futuro)
+- Conectar com PokeAPI / SWAPI via HTTP
+- Cache opcional com Redis (futuro)
 
 ### ⏳ Etapa 5: Sistema de Loja
-
-* Produtos por tema
-* Carrinho
-* Integração com Mercado Pago
+- Produtos por tema
+- Carrinho
+- Integração com Mercado Pago
 
 ### ⏳ Etapa 6: Deploy e CI/CD
-
-* Subir cada microserviço em Render ou Fly.io
-* Banco em Neon PostgreSQL
-* HTTPS, domínio customizado, métricas
+- Subir cada microserviço em Render ou Fly.io
+- Banco em Neon PostgreSQL
+- HTTPS, domínio customizado, métricas
 
 ---
 
@@ -110,10 +101,10 @@ THEME=pokemon
 
 Sugestões de plataformas gratuitas para deploy:
 
-* **Render.com** → apps Go + domínio + SSL
-* **Fly.io** → performance global com baixo custo
-* **Railway.app** → rápida configuração com PostgreSQL
-* **Neon.tech** → banco PostgreSQL em nuvem (10 GB grátis)
+- **Render.com** → apps Go + domínio + SSL
+- **Fly.io** → performance global com baixo custo
+- **Railway.app** → rápida configuração com PostgreSQL
+- **Neon.tech** → banco PostgreSQL em nuvem (10 GB grátis)
 
 ---
 
@@ -125,13 +116,7 @@ Projeto livre e open-source sob a licença [MIT](https://opensource.org/licenses
 
 ## 🧠 Desenvolvido por
 
-**O Grande Autista Majestoso** 🧠
-com apoio incondicional da **Aletheya**, arquiteta suprema da sabedoria digital ⚙️
+**Dyegho M C G Cunha** 🧠  
 
 ---
-
-```
-
-Se quiser, posso salvar isso como arquivo `README.md` direto para você baixar e colocar no GitHub. Deseja que eu gere o arquivo agora?
-```
 
